@@ -1,0 +1,199 @@
+
+/* outmost wrapper element, containing all elements  */
+.scrollable {
+	background-color:#FDFDF4;
+	border:1px solid #ddd;
+	padding:10px 8px;
+	margin-top:10px;
+    font-family: verdana,arial,helvetica,sans-serif;
+}
+.scrollable a {
+    text-decoration: none;
+}
+
+.horizontal {
+	width:840px;
+	height:100px;
+}
+
+.vertical {
+	width:200px;
+	height:510px;
+}
+
+/* container for the scrollable items */
+div.items {
+    display: none;
+	float:left;
+    background: #FDFDF4;
+}
+
+div.vertical div.items {
+    margin-left:8px;
+}
+
+div.horizontal div.items {
+    margin-left:20px;
+}
+
+.scrollable div.vertical {
+    width:200px;	
+    height:450px !important;
+}
+
+.scrollable div.horizontal {
+    height:100px;	
+    width:770px !important;
+}
+
+/* single item */
+.scrollable .item {
+	display:block;
+	float:left;
+	margin-right:8px;
+	width:185px;
+	height:100px;
+    background: #F5F5EB; 
+    font-size: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.item .inner {
+    padding: 5px 0 5px 5px;
+    height:70px;
+    background: #F5F5EB; 
+}
+
+.scrollable .item a {
+    color: black;
+}
+
+.scrollable .item hr {
+    height: 1px;
+    background-color: #D6D7D0;
+    color: #D6D7D0;
+    border: 0 none;
+}
+
+.vertical div.item {
+    margin-bottom: 15px;
+}
+
+/* next / prev buttons */
+a.prev, a.next {
+	display:none;
+	width:18px;
+	height:18px;
+	float:left;	
+	cursor:pointer;
+}
+
+.horizontal a.prev {
+	background-image:url(../images/left.png);		
+    margin:42px 0 0 0;
+}
+
+.horizontal a.next {
+	background-image:url(../images/right.png);		
+    margin:42px 0 0 0;
+}
+
+.vertical a.prev {
+	background-image:url(../images/up.png);		
+    margin:0 0 10px 90px;
+}
+
+.vertical a.next {
+	background-image:url(../images/down.png);		
+    margin:10px 0 0 90px;
+}
+
+a.prev:hover {
+	background-position:0 -18px;		
+}
+
+a.next:hover {
+	background-position:0 -18px;		
+}
+
+.vertical .navi {
+    display: none; 
+}
+
+/* navigator */
+div.navi {
+	position:relative;
+	top:-20px;
+	height:0px;
+}
+
+/* items inside navigator */
+div.navi span {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:3px;
+	background:url(../images/dots.png) 0 0 no-repeat;     
+	cursor:pointer;
+}
+
+div.navi span:hover {
+	background-position:0 -8px;      
+}
+
+div.navi span.active {
+	background-position:0 -16px;     
+} 	
+
+.scrollable table td {
+    padding:2px 3px 1px 5px;
+}
+
+.scrollable .title {
+    background: #cccc66;
+    float: none;
+    width: 175px;
+    height: 20px;
+    line-height: 17px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: black;
+	cursor:pointer;
+}
+
+.scrollable .label {
+    background: #F5F5EB;
+}
+
+.scrollable .activeTitle {
+    background: #ff9900 !important;
+}
+
+.scrollable .activeDesc {
+    background: #ffcc99 !important;
+}
+
+.scrollable div.picture {
+    height:41px;
+    width:55px;
+    float: right;
+	cursor:pointer;
+}
+
+#sidebarLeft {
+    position: absolute;
+    top: 0px;
+    width: 235px;
+    height: 100%;
+    padding-left: 15px;;
+}
+
+#sidebarRight {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 235px;
+    height: 100%;
+    padding-left: 15px;
+}

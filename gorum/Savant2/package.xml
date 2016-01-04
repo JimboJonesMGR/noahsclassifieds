@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE package SYSTEM "http://pear.php.net/dtd/package-1.0">
+<package version="1.0" packagerversion="1.4.6">
+ <name>Savant2</name>
+ <summary>A template system that uses PHP for its logic and encapsulated methods for convenience.</summary>
+ <description>Allows you to separate your business logic (&quot;model&quot; and &quot;controller&quot;) from display logic (&quot;view&quot;) using PHP-based templates.
+* It doesn&apos;t have its own template language; you write your display logic using PHP.
+* It doesn&apos;t compile templates; they&apos;re already in PHP.  If you like, you may pass in a custom compiler object to compile your template source to PHP.
+* It include()s your template at display() and fetch() time, so your template has access to all the Savant2 properties and methods using $this-&gt;property and $this-&gt;method().
+* It has a plugin system; you can write your own custom classes, and they are loaded on-the-fly and as-needed at display time using $this-&gt;plugin().
+* It has an output filter system; you can write your own custom classes, and they are loaded on-the-fly and as-needed at display time using the loadFilter() method.
+
+See http://phpsavant.com/ for online documentation.
+ </description>
+ <maintainers>
+  <maintainer>
+   <user>pmjones</user>
+   <name>Paul M. Jones</name>
+   <email>pmjones@ciaweb.net</email>
+   <role>lead</role>
+  </maintainer>
+  </maintainers>
+ <release>
+  <version>2.4.3</version>
+  <date>2006-03-05</date>
+  <license>LGPL License</license>
+  <state>stable</state>
+  <notes>* typo bugfix in constructor; changed setAutoload($config[&apos;autload&apos;]) to $config[&apos;autoload&apos;].  Thanks, David Mytton.
+  </notes>
+  <provides type="class" name="Savant2" />
+  <provides type="function" name="Savant2::setAutoload" />
+  <provides type="function" name="Savant2::setCompiler" />
+  <provides type="function" name="Savant2::setCall" />
+  <provides type="function" name="Savant2::setError" />
+  <provides type="function" name="Savant2::setRestrict" />
+  <provides type="function" name="Savant2::setExtract" />
+  <provides type="function" name="Savant2::setReference" />
+  <provides type="function" name="Savant2::setTemplate" />
+  <provides type="function" name="Savant2::setEscape" />
+  <provides type="function" name="Savant2::addEscape" />
+  <provides type="function" name="Savant2::getEscape" />
+  <provides type="function" name="Savant2::escape" />
+  <provides type="function" name="Savant2::eprint" />
+  <provides type="function" name="Savant2::setPath" />
+  <provides type="function" name="Savant2::addPath" />
+  <provides type="function" name="Savant2::getPath" />
+  <provides type="function" name="Savant2::findFile" />
+  <provides type="function" name="Savant2::assign" />
+  <provides type="function" name="Savant2::assignRef" />
+  <provides type="function" name="Savant2::clear" />
+  <provides type="function" name="Savant2::getVars" />
+  <provides type="function" name="Savant2::loadTemplate" />
+  <provides type="function" name="Savant2::findTemplate" />
+  <provides type="function" name="Savant2::fetch" />
+  <provides type="function" name="Savant2::display" />
+  <provides type="function" name="Savant2::loadPlugin" />
+  <provides type="function" name="Savant2::unloadPlugin" />
+  <provides type="function" name="Savant2::splugin" />
+  <provides type="function" name="Savant2::plugin" />
+  <provides type="function" name="Savant2::loadFilter" />
+  <provides type="function" name="Savant2::unloadFilter" />
+  <provides type="function" name="Savant2::applyFilters" />
+  <provides type="function" name="Savant2::error" />
+  <provides type="function" name="Savant2::isError" />
+  <provides type="class" name="Savant2_Compiler" />
+  <provides type="function" name="Savant2_Compiler::compile" />
+  <provides type="class" name="Savant2_Error" />
+  <provides type="function" name="Savant2_Error::error" />
+  <provides type="class" name="Savant2_Filter" />
+  <provides type="function" name="Savant2_Filter::filter" />
+  <provides type="class" name="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin::plugin" />
+  <provides type="class" name="PHPCodeAnalyzer" />
+  <provides type="function" name="PHPCodeAnalyzer::analyze" />
+  <provides type="function" name="PHPCodeAnalyzer::handleSimpleToken" />
+  <provides type="function" name="PHPCodeAnalyzer::handleInclude" />
+  <provides type="function" name="PHPCodeAnalyzer::handleString" />
+  <provides type="function" name="PHPCodeAnalyzer::handleVariable" />
+  <provides type="function" name="PHPCodeAnalyzer::handleDoubleColon" />
+  <provides type="function" name="PHPCodeAnalyzer::handleNew" />
+  <provides type="function" name="PHPCodeAnalyzer::handleFunction" />
+  <provides type="function" name="PHPCodeAnalyzer::handleClass" />
+  <provides type="function" name="PHPCodeAnalyzer::handleObjectOperator" />
+  <provides type="function" name="PHPCodeAnalyzer::handleWhitespace" />
+  <provides type="function" name="PHPCodeAnalyzer::handleAs" />
+  <provides type="function" name="PHPCodeAnalyzer::handleConstruct" />
+  <provides type="function" name="PHPCodeAnalyzer::classInstantiated" />
+  <provides type="function" name="PHPCodeAnalyzer::fileIncluded" />
+  <provides type="function" name="PHPCodeAnalyzer::functionCalled" />
+  <provides type="function" name="PHPCodeAnalyzer::useMemberVar" />
+  <provides type="function" name="PHPCodeAnalyzer::useVariable" />
+  <provides type="class" name="Savant2_Compiler_basic" extends="Savant2_Compiler" />
+  <provides type="function" name="Savant2_Compiler_basic::changed" />
+  <provides type="function" name="Savant2_Compiler_basic::saveCompiled" />
+  <provides type="function" name="Savant2_Compiler_basic::getPath" />
+  <provides type="function" name="Savant2_Compiler_basic::compile" />
+  <provides type="function" name="Savant2_Compiler_basic::analyze" />
+  <provides type="function" name="Savant2_Compiler_basic::allowedStatic" />
+  <provides type="function" name="Savant2_Compiler_basic::allowedFunctions" />
+  <provides type="class" name="Savant2_Exception" extends="Exception" />
+  <provides type="class" name="Savant2_Error_exception" extends="Savant2_Error" />
+  <provides type="function" name="Savant2_Error_exception::error" />
+  <provides type="class" name="Savant2_Error_pear" extends="Savant2_Error" />
+  <provides type="function" name="Savant2_Error_pear::error" />
+  <provides type="class" name="Savant2_Error_stack" extends="Savant2_Error" />
+  <provides type="function" name="Savant2_Error_stack::error" />
+  <provides type="class" name="Savant2_Filter_colorizeCode" extends="Savant2_Filter" />
+  <provides type="function" name="Savant2_Filter_colorizeCode::filter" />
+  <provides type="class" name="Savant2_Filter_trimwhitespace" extends="Savant2_Filter" />
+  <provides type="function" name="Savant2_Filter_trimwhitespace::filter" />
+  <provides type="class" name="Savant2_Plugin_ahref" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_ahref::plugin" />
+  <provides type="class" name="Savant2_Plugin_checkbox" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_checkbox::plugin" />
+  <provides type="class" name="Savant2_Plugin_cycle" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_cycle::plugin" />
+  <provides type="class" name="Savant2_Plugin_dateformat" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_dateformat::plugin" />
+  <provides type="class" name="Savant2_Plugin_form" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_form::plugin" />
+  <provides type="function" name="Savant2_Plugin_form::set" />
+  <provides type="function" name="Savant2_Plugin_form::start" />
+  <provides type="function" name="Savant2_Plugin_form::end" />
+  <provides type="function" name="Savant2_Plugin_form::button" />
+  <provides type="function" name="Savant2_Plugin_form::checkbox" />
+  <provides type="function" name="Savant2_Plugin_form::file" />
+  <provides type="function" name="Savant2_Plugin_form::hidden" />
+  <provides type="function" name="Savant2_Plugin_form::image" />
+  <provides type="function" name="Savant2_Plugin_form::password" />
+  <provides type="function" name="Savant2_Plugin_form::radio" />
+  <provides type="function" name="Savant2_Plugin_form::reset" />
+  <provides type="function" name="Savant2_Plugin_form::select" />
+  <provides type="function" name="Savant2_Plugin_form::submit" />
+  <provides type="function" name="Savant2_Plugin_form::note" />
+  <provides type="function" name="Savant2_Plugin_form::text" />
+  <provides type="function" name="Savant2_Plugin_form::textarea" />
+  <provides type="function" name="Savant2_Plugin_form::block" />
+  <provides type="function" name="Savant2_Plugin_form::group" />
+  <provides type="class" name="Savant2_Plugin_image" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_image::plugin" />
+  <provides type="class" name="Savant2_Plugin_input" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_input::plugin" />
+  <provides type="class" name="Savant2_Plugin_javascript" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_javascript::plugin" />
+  <provides type="class" name="Savant2_Plugin_modify" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_modify::plugin" />
+  <provides type="class" name="Savant2_Plugin_options" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_options::plugin" />
+  <provides type="class" name="Savant2_Plugin_radios" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_radios::plugin" />
+  <provides type="class" name="Savant2_Plugin_stylesheet" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_stylesheet::plugin" />
+  <provides type="class" name="Savant2_Plugin_textarea" extends="Savant2_Plugin" />
+  <provides type="function" name="Savant2_Plugin_textarea::plugin" />
+  <filelist>
+   <file role="php" md5sum="c77108fc8f740b59f2a0fe60f69b0fc3" name="Savant2.php"/>
+   <file role="php" md5sum="94bdc2935e880545c39e4571f0037f34" name="Savant2/Compiler.php"/>
+   <file role="php" md5sum="963710cb0be20f9c92ef43d1bc0067ba" name="Savant2/Error.php"/>
+   <file role="php" md5sum="95de7d2dfc61f390bfc36affea11df0e" name="Savant2/Filter.php"/>
+   <file role="php" md5sum="373f6093013e3e6f904574b3aa936bb9" name="Savant2/Plugin.php"/>
+   <file role="php" md5sum="c0f6948695d37f3b5c8fd8fc90cb32db" name="Savant2/PHPCodeAnalyzer.php"/>
+   <file role="php" md5sum="0bdb0c17b1776e4f361da1220f73db5b" name="Savant2/Savant2_Compiler_basic.php"/>
+   <file role="php" md5sum="b26ecd26fe09195fd9d522f0f91566c8" name="Savant2/Savant2_Error_exception.php"/>
+   <file role="php" md5sum="d8ba5ed84108995e00fe4422917af1f8" name="Savant2/Savant2_Error_pear.php"/>
+   <file role="php" md5sum="45ea9139ed979b2e075014f4cb13c829" name="Savant2/Savant2_Error_stack.php"/>
+   <file role="php" md5sum="9eec8ebc27baedb02e4ee1a0d7bb7017" name="Savant2/Savant2_Filter_colorizeCode.php"/>
+   <file role="php" md5sum="9a20cd26666dd5550fdab3fcbd1f5600" name="Savant2/Savant2_Filter_trimwhitespace.php"/>
+   <file role="php" md5sum="ed4f4231d803caf54de09ed94ea64594" name="Savant2/Savant2_Plugin_ahref.php"/>
+   <file role="php" md5sum="e105dab131c830dc8dd703906efc4c3f" name="Savant2/Savant2_Plugin_checkbox.php"/>
+   <file role="php" md5sum="e6d6bb3be15cb014bbc0c753cb3cd4b6" name="Savant2/Savant2_Plugin_cycle.php"/>
+   <file role="php" md5sum="7697e093c8138b0d46fb8caa922f50de" name="Savant2/Savant2_Plugin_dateformat.php"/>
+   <file role="php" md5sum="d94475fc431341ce66393073a88568ad" name="Savant2/Savant2_Plugin_form.php"/>
+   <file role="php" md5sum="cebee383ebf5798b2ee727595bbaaccf" name="Savant2/Savant2_Plugin_image.php"/>
+   <file role="php" md5sum="ecd185568f3dee8fe123c1e042b30d60" name="Savant2/Savant2_Plugin_input.php"/>
+   <file role="php" md5sum="7a58437ec511ab59d49e3f5949ac0c57" name="Savant2/Savant2_Plugin_javascript.php"/>
+   <file role="php" md5sum="9f70082a70374b4281c3f0df9e617676" name="Savant2/Savant2_Plugin_modify.php"/>
+   <file role="php" md5sum="371aeb5b387d5e49389edeceb1c121ec" name="Savant2/Savant2_Plugin_options.php"/>
+   <file role="php" md5sum="75bc1009456baa704773eed4de833a6e" name="Savant2/Savant2_Plugin_radios.php"/>
+   <file role="php" md5sum="d5417f80d4fb9a3368d95089ee50c2c7" name="Savant2/Savant2_Plugin_stylesheet.php"/>
+   <file role="php" md5sum="18692cdabbeb44a82813174d1d5ab8d7" name="Savant2/Savant2_Plugin_textarea.php"/>
+   <file role="test" md5sum="0278d419eed2716b7c399db1c2f16754" name="Savant2/tests/1_assign.php"/>
+   <file role="test" md5sum="d9c41a9651a1a3706f85f7357461fc5c" name="Savant2/tests/2_display.php"/>
+   <file role="test" md5sum="ea8eacede4cb63014006302def1c45af" name="Savant2/tests/3_fetch.php"/>
+   <file role="test" md5sum="bbdfec93ec03c0578e3e396e0980ff8b" name="Savant2/tests/4_plugins.php"/>
+   <file role="test" md5sum="a88c02cfe94eb590e231ab5cfc873a3d" name="Savant2/tests/5_filters.php"/>
+   <file role="test" md5sum="6e2bbce66f43ab96832a30285e29a1a6" name="Savant2/tests/6_paths.php"/>
+   <file role="test" md5sum="8408a2541658f4729be8f6ad9dd81c77" name="Savant2/tests/7_include.php"/>
+   <file role="test" md5sum="f81256b5e039aaf924e4fbb6cc790734" name="Savant2/tests/8_extend.php"/>
+   <file role="test" md5sum="d9c3b12cb3d3f26b85ec7a50a7b196d8" name="Savant2/tests/9_errors.php"/>
+   <file role="test" md5sum="7e4b6576d5c0e0d082a0e0810044db0c" name="Savant2/tests/a_classExists.php"/>
+   <file role="test" md5sum="c45f81c917dc91d60365132ccdf3317b" name="Savant2/tests/compile.php"/>
+   <file role="test" md5sum="8edc09050d9590fd119ea52b83e4cb3e" name="Savant2/tests/form.php"/>
+   <file role="test" md5sum="dedeb196d29b2cfd95eb1f283b2376b6" name="Savant2/tests/form2.php"/>
+   <file role="test" md5sum="51d88afb731d8a4e444835b3abc1eef3" name="Savant2/tests/resources/Savant2_Filter_fester.php"/>
+   <file role="test" md5sum="ddfdfb3fa19a66f21d6a1be811019893" name="Savant2/tests/resources/Savant2_Plugin_cycle2.php"/>
+   <file role="test" md5sum="e885ca1352aeba00374a24827067cc6f" name="Savant2/tests/resources/Savant2_Plugin_example_extend.php"/>
+   <file role="test" md5sum="079b24ae2516f3e99d1893cdbf68f4a9" name="Savant2/tests/resources/Savant2_Plugin_example.php"/>
+   <file role="test" md5sum="da4596a08f44375e17709a3d00b26ef0" name="Savant2/tests/resources/Savant2_Plugin_fester.php"/>
+   <file role="test" md5sum="56f2d363f0159f7852212d60260f48df" name="Savant2/tests/resources/savant.gif"/>
+   <file role="test" md5sum="138ba55d8461d212c18041736da12154" name="Savant2/tests/templates/assign.tpl.php"/>
+   <file role="test" md5sum="fbf8636ae829d9318ac6f081bad7faa5" name="Savant2/tests/templates/compile.tpl.php"/>
+   <file role="test" md5sum="19da93ccbe022e972e426765a37f202f" name="Savant2/tests/templates/compile_bad.tpl.php"/>
+   <file role="test" md5sum="0b553e85363b52a1f38b50a94e951f4d" name="Savant2/tests/templates/extend.tpl.php"/>
+   <file role="test" md5sum="5e0c5e4ecee8e4ed9755723d3d66e5dc" name="Savant2/tests/templates/filters.tpl.php"/>
+   <file role="test" md5sum="8348f2cb81a1db03c8b1e166ea10df2c" name="Savant2/tests/templates/footer.tpl.php"/>
+   <file role="test" md5sum="6e0e102e880f140f5021b50643e79191" name="Savant2/tests/templates/form.tpl.php"/>
+   <file role="test" md5sum="d8b1514215cfc38781a27da621607de3" name="Savant2/tests/templates/form2.tpl.php"/>
+   <file role="test" md5sum="212ca0c5ed5c1505693223f1901e0bec" name="Savant2/tests/templates/header.tpl.php"/>
+   <file role="test" md5sum="d9d9765768c9a0683c8b2f2ee805ac14" name="Savant2/tests/templates/main.tpl.php"/>
+   <file role="test" md5sum="9949b43a99f51ffa9931917c29cbf87b" name="Savant2/tests/templates/plugins.tpl.php"/>
+   <file role="test" md5sum="e4d617ed46778bd980a95787956d8ec5" name="Savant2/tests/templates/test.tpl.php"/>
+  </filelist>
+ </release>
+</package>

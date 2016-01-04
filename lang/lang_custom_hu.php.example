@@ -1,0 +1,66 @@
+<?php
+// You can use a file like this to provide translations of texts that are stored in the database.
+// For more details, see the documentattion: http://www.noahsclassifieds.org/documentation/translation
+
+// Categories:
+// e.g. $lll[1]["category"]["name"] identifies the 'Name' field of the category object with ID 1.
+$lll[1]["category"]["name"]="Autók";
+$lll[1]["category"]["wholeName"]="Autók";
+$lll[1]["category"]["description"]="Egy csomó külonbozõ típusú autó";
+$lll[1]["category"]["customAdListTitle"]="Sajat egyedi cim";
+
+$lll[2]["category"]["name"]="Hardver";
+$lll[2]["category"]["description"]="Itt alkatrészeket találhat számítógépébe";
+$lll[2]["category"]["customItemListTitle"]="";
+
+$lll[5]["category"]["name"]="Gazdasagos autók";
+$lll[5]["category"]["wholeName"]="Autók - Gazdasagos autók";
+$lll[5]["category"]["description"]="Egy csomó külonbozõ típusú autó";
+
+// ...
+
+// Custom fields:
+// e.g. $lll[1]["field"]["name"] identifies the 'Name' property of the custom field object with ID 1.
+$lll[45]["customfield"]["name"]="Fogyasztas";
+$lll[45]["customfield"]["expl"]="Magyarázó szöveg";    // the 'Explanation text' property
+$lll[45]["customfield"]["default_text"]="ketto";       // the 'Default' property of the Text and Selection fields
+$lll[45]["customfield"]["default_multiple"]="ketto";   // the 'Default' property of the Multiple selection and Checkbox fields
+$lll[45]["customfield"]["formatPrefix"]="prefiksz";    // the 'Prefix' property
+$lll[45]["customfield"]["formatPostfix"]="posztfiksz"; // the 'Postfix' property
+$lll[45]["customfield"]["precisionSeparator"]="prec";  // the 'Precision separator' property
+$lll[45]["customfield"]["thousandsSeparator"]="thou";  // the 'Thousands separator' property
+$lll[45]["customfield"]["format"]="format %s";         // the 'Display format' property
+
+$lll[187]["customfield"]["name"]="Promocios szint";
+$lll[187]["customfield"]["values"]="semmi, arany, ezust, bronz";  // the 'Possible values' property
+
+$lll[186]["customfield"]["name"]="Promocios szint";
+$lll[186]["customfield"]["values"]="semmi, arany, ezust, bronz";  // the 'Possible values' property
+
+// ...
+
+// Custom lists
+// e.g. $lll[1]["customlist"]["listTitle"] identifies the 'Title' property of the custom list object with ID 1.
+$lll[1]["search"]["listDescription"]="Hirdeteseim";                // the 'Description' property
+$lll[1]["search"]["listTitle"]="Hirdeteseim"; 
+$lll[2]["search"]["listDescription"]="A 100 legfrissebb hirdetes"; // the 'Description' property
+$lll[2]["search"]["listTitle"]="Legfrissebb"; 
+$lll[3]["search"]["listDescription"]="A 100 legnezettebb hirdetes";// the 'Description' property
+$lll[3]["search"]["listTitle"]="Nepszeruk"; 
+
+// ...
+
+// Settings
+// e.g. $lll[1]["settings"]["titlePrefix"] identifies the 'Title prefix' property of the settings object.
+$lll[1]["settings"]["titlePrefix"]="Magyar cim - "; 
+$lll[1]["settings"]["mainTitle"]="Cim";                    // the 'Title tag' property
+$lll[1]["settings"]["mainDescription"]="Leiras";           // the 'Description meta tag' property
+$lll[1]["settings"]["mainKeyword"]="kulcsszo1, kulcsszo2"; // the 'Keywords meta tag' property
+$lll[1]["settings"]["dateFormat"]="m-d-Y";                 // the 'Date format' property
+
+// Notifications
+// e.g. $lll[1]["notification"]["title"] identifies the 'Title' property of the notification object with ID 1.
+$lll[1]["notification"]["title"]="Regisztracios email"; 
+$lll[1]["notification"]["subject"]="Regisztracios email";     // the 'Subject' property
+$lll[1]["notification"]["body"]="Magyar nyelvu email szoveg"; // the 'Body' property
+?>

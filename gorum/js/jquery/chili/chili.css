@@ -1,0 +1,27 @@
+.template td code {
+    width: 650px;
+    border-color:#AAAAAA;
+    border-style:solid dashed;
+    border-width:1px;
+    margin:10px 0;
+    padding: 10px 0px 10px 10px;
+    font-family:"Consolas","Lucida Console",Courier,mono !important;
+    font-size:13px;
+    overflow:auto;
+    display: block;
+    white-space: pre;
+    background:#FFFFFF url(./gorum/js/jquery/chili/code-bg.gif) repeat scroll 0 0;
+    clear: both;
+}
+.template td code .line_numbers {
+    background-color:#DDEEFF;
+    color:gray;
+    overflow:visible;
+    text-align:right;
+    background:transparent none repeat scroll 0 0;
+    border-color:-moz-use-text-color #AAAAAA -moz-use-text-color -moz-use-text-color;
+    border-style:none solid none none;
+    border-width:medium 1px medium medium;
+    padding:7px 4px 7px 20px;
+}
+

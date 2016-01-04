@@ -1,0 +1,316 @@
+.template a {
+	color: #336600;
+    text-decoration: none;
+	font-weight: bold;
+}
+.template a:hover {
+	color: black;
+}
+.template table{
+    width: 100%;
+    border-collapse:collapse; 
+}
+.template table caption{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 6px;
+	height: 2.5em;
+    line-height: 2.5em;  
+    background: #999966;
+    color: white; 
+	font-weight: bold;
+    border: white solid;
+    border-width: 1px 1px 0px;
+}
+.template table tr {
+	height: 2em;
+    /*line-height: 3em;  */
+}
+
+.template table td,
+.colheader, .filterheader {
+    border: white solid 1px;
+	text-align: left;
+    padding: 6px 5px 6px 10px;
+}
+.filterheader input {
+    height: 1.2em;
+    font-size: 1em;
+    width: 8em;
+}
+.filterheader select {
+    height: 1.6em;
+    font-size: 1em;
+    width: 8em;
+}
+.template table td td {
+    border: none;
+    padding: 0px;
+}
+
+.template table td td.celltext {
+    white-space: nowrap;
+}
+
+.template table thead {
+    background: #CCCC99; 
+}
+.title {
+    border: none;
+	color: black;
+	text-align: left;
+    float: left;
+}
+.headermethod {
+	color: #CCFFFF;
+	text-align: right;
+    float: right;
+}
+.title a, .headermethod a {
+	color: #CCFFFF;
+}
+
+.title a:hover, .headermethod a:hover{
+	color: white;
+}
+.cell, .label, .cell0, .label0{
+    background: #F5F5EB; 
+}
+.cell1, .label1{
+    background: #FDFDF4; 
+}
+  
+.detailsTemplate .label0, .detailsTemplate .label1{
+    width: 30%;
+}          
+.detailsTemplate .cell0, .detailsTemplate .cell1{
+    width: 70%;
+}          
+.formTemplate .label0, .formTemplate .label1{
+    width: 20%;
+}          
+.formTemplate .cell0, .formTemplate .cell1{
+    width: 80%;
+}
+#fieldset-create_form .label {
+    width: 70%;
+}
+.label, .label0, .label1 {
+    font-weight: bold;
+}
+@media print {
+    .template table caption{
+        border: 1px solid black;
+    }
+    .headermethod, #sponsorsContainer, .filterheader {
+        display: none;
+    }
+    .template table td, .template table th, .cell0, .cell1{
+        border: 1px solid #000000;
+    }
+    .template a, .template a:hover { color: black; }
+}
+
+.button{
+    background: #f2f3ef; 
+    color: #333366; 
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}           
+.template table td.separator, .template table td.submitfooter {
+    background:#E2E2C2;
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+}           
+.expl{ 
+    color:gray; 
+  	font-size: 8pt;
+  	font-weight: normal;
+    white-space: normal;
+    line-height: 1em;  
+}
+
+/* table sort */
+
+.table-sortable {
+	cursor:pointer;
+	background-image:url("../images/sortable2.gif");
+	background-position: 18px center;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+.table-sorted-asc {
+	background-image:url("../images/sorted_up2.gif");
+	background-position: 18px center;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+.table-sorted-desc {
+	background-image:url("../images/sorted_down2.gif");
+	background-position: 18px center;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+.hover-row {
+	background: #d1e3e0;
+}
+.hover-click {
+	background: #e3e0d1;
+}
+/* Pager tool styles */
+ul.pager {
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: right;
+	white-space:nowrap;
+}
+ul.pager li {
+	margin: 0;
+	padding: 0 3px;
+	list-style: none;
+	display: inline;
+    color:#333366; 
+    font-weight: bold;
+}
+ul.pager li a { 
+    text-decoration: underline; 
+    color:#333366;
+}
+ul.pager li a:hover { 
+    color:#0066cc;
+}
+#infoText {
+    height: 2em;
+    line-height: 2em;
+    width: 100%; 
+    text-align: center;
+    background: #cbcc66;
+	color: #000000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sortingHighlight { background: #B7BEA6;}
+
+/* 'Reply to this posting' and 'Email this to a friend' links */
+.friendAndResponse td a {
+    background: #81a249;
+    color:#fff;
+    font-size: 11px;
+	padding: 5px 20px;
+	text-decoration:none;
+}
+.friendAndResponse td a:hover {
+	text-decoration:underline;    
+    color:#fff;
+}
+
+.friendAndResponse table {
+    width: 100%;
+}
+.friendAndResponse table td {
+    width: 33%;
+    text-align: center;
+}
+
+/* Pictures related: */
+td.pictures {
+    width: 206px;
+    background: #EDEDEC;
+    border-left: 1px solid white;
+    vertical-align: top;
+    text-align: center;
+}
+.pictures table {
+    border-spacing: 5px;
+    border-collapse: separate;
+    width: 195px;
+}
+.pictures table tr td {
+    border: 1px solid #B6B7B2;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+.pictures table tr td img {
+    margin: 0px auto;
+}
+.pictures table tr td.mainpic {
+}
+
+div.picture {
+    border: 1px solid #B6B7B2;
+    padding: 3px;
+    width: 120px;
+    /* height: 90px;
+    line-height: 90px; */
+    text-align: center;
+    vertical-align: middle;
+}
+div.picture img {
+    margin: auto;
+}
+td.mainpic div.picture
+{
+    width: 187px;
+    height:140px;    
+    line-height: 140px;
+    background: #D6D7D3;
+    border: 0px;
+}
+#confirmationText, #successText, #failText {
+    height: 80px;
+}
+
+table.propagateWrap td {
+    vertical-align: middle;
+    padding-right: 10px !important;
+}
+
+table.propagateWrap {
+    width: auto;
+}
+
+.confirmationTemplate {
+	background: #ab92c0;
+    color: #6E7066;
+}
+
+.confirmationHeader {
+	height: 27px;
+    line-height: 20px;  
+	font-weight: bold;
+	background: #ab92c0 url('../images/header_bg4.gif') repeat-x;
+    color: white;
+    padding-left: 10px;
+}  
+
+.confirmationContent {
+	color: #6E7066;
+	background: #FAFAFA;
+	padding: 14px 15px 12px 10px;
+	text-align: left;
+    height: 80px;
+    font-weight: bold;
+}
+
+.confirmationFooter {
+    background: url('../images/submitfooter_bg.gif') repeat-x;
+    padding: 3px 0 0;
+	height: 26px; 
+	text-align: center;
+}
+.propagate {
+    position: relative;
+    top: 3px;  
+}
+.propagate_subcat {
+    position: relative;
+    top: 6px;    
+}
+.ruleWarning {
+    color: red;
+    font-size: smaller;
+}

@@ -1,0 +1,9 @@
+<?php
+$dbUser="root";
+$dbUserPw="";
+$dbName="classifieds_7.0";
+$hostName="localhost";
+$dbPrefix="";
+$dbPort="";
+$dbSocket="";
+?>

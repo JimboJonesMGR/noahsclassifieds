@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?><?xml-stylesheet type='text/xsl' href='http://localhost:8080/sitemap.xsl'?><urlset
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+                            <url>
+                            <loc>http://localhost:8080/Websites</loc>
+                            <lastmod>2009-09-05T21:55:37-04:00</lastmod>
+                            <changefreq>always</changefreq>
+                            <priority>0.02</priority>
+                            </url>
+                                        <url>
+                                        <loc>http://localhost:8080/Websites/22_</loc>
+                                        <lastmod>2009-12-31T16:12:00-05:00</lastmod>
+                                        <changefreq>always</changefreq>
+                                        <priority>0</priority>
+                                        </url></urlset>

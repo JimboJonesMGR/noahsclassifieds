@@ -1,0 +1,77 @@
+#checkconf, .checkconf {
+    background-color: #f5f5eb;
+    border: 1px solid red;
+    text-align: left;
+    padding: 20px;
+    margin-top:10px;
+    margin-bottom:40px;
+    
+}
+#checkconf h1, #checkconf h2, .checkconf h1, .checkconf h2{
+    font-size: 14px; 
+}
+
+.conferr {
+    color: #ff0000;
+    font-weight:bold;
+}
+.confok {
+    color: #238E23;
+    font-weight:bold;
+}
+.confexpl {
+    font-size: 10px; 
+    color: grey;
+    font-weight:normal;
+}
+#checkconf pre {
+    background-color:#F7F9FA;
+    border:1px dashed #8CACBB;
+    font-size:120%;
+    overflow-x:auto;
+    overflow-y:hidden;
+    padding-top:1em;
+    white-space:pre;
+}
+#checkconf li, .checkconf li {
+    color: #238E23;
+    padding-bottom: 10px;
+}
+.varName {
+    font-family:courier new;
+    font-size:120%;
+}
+.chart {
+    border-collapse: collapse;
+    border: 1px solid blue;
+}
+.chart td{
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+.chart td ol{
+    text-align: left;
+}
+td.label {
+    width: 50%;
+    text-align: left;
+}
+
+.updateButton {
+    color: #ff0000;
+    font-weight:bold;
+}
+
+#releaseNotes {
+    height: 400px;
+    padding: 10px 20px;
+    border-left: 1px solid blue;
+    border-top: 1px solid blue;
+    overflow-y: auto;
+}
+#releaseNotes li {
+    color: black;
+    text-align: justify;
+}

@@ -1,0 +1,81 @@
+.catGrid td {
+    text-align: left;
+    vertical-align: top;
+    padding-right: 8px;
+}
+.catGrid td div {
+    padding-left: 7px;
+    width: 100%;
+}
+
+.catTitle {
+    height: 30px;
+    line-height: 30px;
+}
+.catColor0 .catTitle {
+    background: #990 url('../images/catcorn0.gif') no-repeat right;
+}
+.catColor1 .catTitle {
+    background: #f90 url('../images/catcorn1.gif') no-repeat right;
+}
+.catColor2 .catTitle {
+    background: #c60 url('../images/catcorn2.gif') no-repeat right;
+}
+.catColor3 .catTitle {
+    background: #c93 url('../images/catcorn3.gif') no-repeat right;
+}
+.catColor0 .catDescription {
+    background: #cc6;
+}
+.catColor1 .catDescription {
+    background: #fc9;
+}
+.catColor2 .catDescription {
+    background: #e6b380;
+}
+.catColor3 .catDescription {
+    background: #fc6;
+}
+.catColor0 .catPicture {
+    background: #990 ;
+}
+.catColor1 .catPicture {
+    background: #f90;
+}
+.catColor2 .catPicture {
+    background: #c60;
+}
+.catColor3 .catPicture {
+    background: #c93;
+}
+
+.catTitle {
+    color: #555; 
+    font-size: 14px;
+}
+
+.catTitle a {
+    color: #000; 
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 14px;
+}
+
+.catTitle a:hover {
+    color: #fff; 
+}
+
+.catDescription {
+    color: #000; 
+    font-size: 10px;
+    padding: 7px 0px;
+    height: 70px;
+}
+
+.catPicture {
+    text-align: center;
+    padding: 7px 0px;
+}
+.catPicture img {
+    border: 0px;
+}

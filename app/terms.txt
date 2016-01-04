@@ -1,0 +1,128 @@
+TOS Agreement for 
+NOAH'S CLassifieds 4.1.1 (New and/or Upgrading and updates)
+
+EULA stands for End User Licensing Agreement. This is the agreement through which the software is licensed to the software user.
+
+
+Noah's Classifieds  EULA Updated September 1, 2009 All Versions. This Agreement must be agreed to before any Installation, 
+support, update or upgrade of the Noah's Classifieds Software, Free, Lite and Commercial V8 RSS and E-Commerce Versions 
+and is an amended agreement to any prior agreement of the Noah's Classifieds Software Product(s).
+
+  
+END-USER LICENSE AGREEMENT FOR NOAH'S CLASSIFIEDS  IMPORTANT PLEASE READ THE TERMS AND CONDITIONS OF THIS 
+LICENSE AGREEMENT CAREFULLY BEFORE CONTINUING WITH THIS PROGRAM INSTALL: NOAH'S CLASSIFIEDS  End-User License 
+Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and NOAH'S CLASSIFIEDS . for the NOAH'S 
+CLASSIFIEDS   software product(s) identified above which may include associated software components, media, printed materials, and 
+"online" or electronic documentation ("SOFTWARE PRODUCT"). By installing, copying, or otherwise using the SOFTWARE PRODUCT, you 
+agree to be bound by the terms of this EULA. This license agreement represents the entire agreement concerning the program between you 
+and NOAH'S CLASSIFIEDS , (referred to as "licenser"), and it supersedes any prior proposal, representation, or understanding between the 
+parties. If you do not agree to the terms of this EULA, do not install or use the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT.
+
+ 
+The NOAH''S CLASSIFIEDS SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, as well as other 
+intellectual property laws and treaties. The *NOAH'S CLASSIFIEDS SOFTWARE PRODUCT is licensed, not sold. (*Perpetual License).
+
+1. GRANT OF LICENSE.  
+The NOAH'S CLASSIFIEDS  SOFTWARE PRODUCTS is/are licensed as follows:  
+(a) Installation and Use. 
+NOAH'S CLASSIFIEDS  grants you the right to install and use licensed copiesb(per URL ONLY) of the NOAH'S CLASSIFIEDS  SOFTWARE on 
+your computer and or Hosting Service (PER URL) running a validly licensed copy of the operating system for which the NOAH'S 
+CLASSIFIEDS SOFTWARE PRODUCT was designed. (MULTI-URL AND WHITE LABLE LICENSES ARE AVAILIBLE). 
+(b) Backup Copies. 
+You may also make copies of the SOFTWARE PRODUCT as may be necessary for backup and archival purposes only.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS. 
+(a) Maintenance of Copyright Notices. 
+You must not remove or alter any copyright notices in the source code on any and all copies of the NOAH'S CLASSIFIEDS SOFTWARE 
+PRODUCT. (You may remove the Header and  Footer in the Noah's Commercially Licensed Products  Only. The Free and Lite Version allows  
+only for the Noah Logo at the top left to be changed AND NOT the Footer Copyrights.   
+(b) Distribution. 
+You may not distribute registered or unregistered copies of the SOFTWARE PRODUCT to third parties.  
+(c) Prohibition on Reverse Engineering, Decompilation, and Disassembly. 
+You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is 
+expressly permitted by applicable law notwithstanding this limitation.  
+(d) Rental. 
+You may not rent, lease,sublet or lend or borrow the Noah's Classifieds SOFTWARE PRODUCTs. 
+(e) Support Services. 
+NOAH'S CLASSIFIEDS may provide you with support services related to the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT ("Support 
+Services"). Any supplemental software code provided to you as part of the Support Services shall be considered part of the NOAH'S 
+CLASSIFIEDS SOFTWARE PRODUCT and subject to the terms and conditions of this EULA.  
+(f) Compliance with Applicable Laws. 
+You must comply with all applicable laws regarding use of the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT.
+
+3. TERMINATION  
+Without prejudice to any other rights, NOAH'S CLASSIFIEDS may terminate this EULA if you fail to comply with the terms and conditions of 
+this EULA. In such event, you must destroy all copies of the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT in your possession.
+
+4. COPYRIGHT 
+All title, including but not limited to copyrights, in and to the NOAH'S CLASSIFIEDS SOFTWARE PRODUCTS and any copies thereof are owned 
+by NOAH'S CLASSIFIEDS or its suppliers. All title and intellectual property rights in and to the content which may be accessed through use 
+of the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT is the property of the respective content owner and may be protected by applicable 
+copyright or other intellectual property laws and treaties. This EULA grants you no rights to use such content. All rights not expressly 
+granted are reserved by NOAH'S CLASSIFIEDS. 
+
+5. NO WARRANTIES 
+NOAH'S CLASSIFIEDS expressly disclaims any warranty for the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT. The NOAH'S CLASSIFIEDS 
+SOFTWARE PRODUCT is provided 'As Is' without any express or implied warranty of any kind, including but not limited to any warranties of 
+merchantability, noninfringement, or fitness of a particular purpose. NOAH'S CLASSIFIEDS does not warrant or assume responsibility for the 
+accuracy or completeness of any information, text, graphics, links or other items contained within the NOAH'S CLASSIFIEDS SOFTWARE 
+PRODUCT. NOAH'S CLASSIFIEDS makes no warranties respecting any harm that may be caused by the transmission of a computer virus, 
+worm, time bomb, logic bomb, or other such computer program. NOAH'S CLASSIFIEDS further expressly disclaims any warranty or 
+representation to Authorized Users or to any third party.
+
+6. LIMITATION OF LIABILITY 
+In no event shall NOAH'S CLASSIFIEDS be liable for any damages (including, without limitation, lost profits, business interruption, or lost 
+information) rising out of 'Authorized Users' use of or inability to use the NOAH'S CLASSIFIEDS SOFTWARE PRODUCT, even if NOAH'S 
+CLASSIFIEDS SOFTWARE PRODUCT has been advised of the possibility of such damages. In no event will NOAH'S CLASSIFIEDS be liable 
+for loss of data or for indirect, special, incidental, consequential (including lost profit), or other damages based in contract, tort or otherwise. 
+{ NOAH'S CLASSIFIEDS SOFTWARE PRODUCT shall have no liability with respect to the content of the NOAH'S CLASSIFIEDS SOFTWARE 
+PRODUCT SOFTWARE PRODUCT or any part thereof, including but not limited to errors or omissions contained therein, libel, infringements 
+of rights of publicity, privacy, trademark rights, business interruption, personal injury, loss of privacy, moral rights or the disclosure of 
+confidential information. LICNENSE TRANSFERS by sale, lease, rent, loaned to any third party are not permitted or supported in any way. 
+
+ 
+By purchasing, installing or using Noah's Classifieds, you (the user) are agreeing to the following terms. DO NOT purchase, install or use the script, i
+f any of these terms are not acceptable for you. If you have any questions, you may contact us at support@noahsclassifieds.org.
+
+   1.
+
+USAGE: A single license allows you to install Noah's Classifieds on only one domain name. If you want to setup more than one websites using the script, 
+you should obtain additional licenses from Noahsclassifieds.org.
+
+Additional licenses are available at discount prices. Please visit our website or email us for more information. You may find the contact information in 
+the Support Information section of this document.
+You should NOT remove, alter or obfuscate any instances of the Noah's Classifieds script's name or copyright notices found in the administration area and 
+PHP source files. Anyway, you are allowed to remove the Header but not the Footer unless you have purchased Noah's Classifieds V8 RSs PRO Commercial Version 
+from the end user side of the Noah's Classifieds Software.
+   
+2.
+
+CHANGE OF DOMAIN NAME: A script license is granted for a particular domain name. If you move the script to a new domain, then you should inform 
+Noahsclassifieds.org about the transfer for approval. Any such transfers without the approval of Noahsclassifieds.org will void your script license.
+   3.
+
+TRANSFER OF LICENSE: If a website running Noah's Classifieds is to be transferred to another party, along with the script, then you should report 
+the transfer to Noahsclassifieds.org prior to the transfer.
+
+Noahsclassifieds.org will have the right to prevent you from transferring the script license and thus the script files to the new party, if the 
+transfer is found to be unacceptable. If approved by Noahsclassifieds.org, the transfer of the website will also involve the transfer of your script 
+license and will no longer be eligible to use the license further. Additionally, any such transfers should retain the script's name and all the original 
+copyright notices including those in the administration area as well as the source files and also contain an unaltered copy of this file.
+REFUNDS: Payments made to Noahsclassifieds.org are final and shall NOT be refunded under any circumstance. 
+   5.
+
+COPYRIGHTS: Noah's Classifieds is copyright protected software. All rights on the script are reserved by Live Transactions.Com, Inc. and Noahsclassifieds.org. 
+You may not resell or redistribute our script, or any part of it, with or without modifications without express written permission from Live Transactions.Com, Inc. 
+and/or Noahsclassifieds.org.
+   6.
+DISCLAIMER: THE SOFTWARE IS PROVIDED ON AN "AS IS" BASIS. Live Transactions.Com, Inc / NOAHSCLASSIFIEDS.ORG DISCLAIMS ALL WARRANTIES RELATING TO THE SOFTWARE, WHETHER 
+EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. NEITHER NOAHSCLASSIFIEDS.ORG NOR ANYONE 
+ELSE WHO HAS BEEN INVOLVED IN THE CREATION, PRODUCTION, OR DELIVERY OF THE SOFTWARE SHALL BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, OR INCIDENTAL DAMAGES ARISING OUT OF 
+THE USE OR INABILITY TOUSE THE SOFTWARE, EVEN IF NOAHSCLASSIFIEDS.ORG HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR CLAIMS. THE PERSON USING THE SOFTWARE BEARS
+ALL RISK AS TO THE QUALITY AND PERFORMANCE OF THE SOFTWARE.
+
+
+
+Noah's Classifieds, Inc. Phoenix, Arizona. 
+
+

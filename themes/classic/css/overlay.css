@@ -1,0 +1,16 @@
+div.overlay {
+    background-image:url(../images/white1.png); 
+    padding:40px;
+    width:576px;
+    display:none;
+}
+
+div.overlay div.close {
+    background:url(../images/close.png) no-repeat;
+    position:absolute;
+    top:2px;
+    right:5px;
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}

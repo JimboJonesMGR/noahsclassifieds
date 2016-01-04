@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    Options -MultiViews
+    RewriteEngine on
+    RewriteRule .* - [env=REWRITE_ON:1]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f 
+    RewriteCond %{REQUEST_FILENAME} !\.(js|css|png|jpg|gif)$
+    RewriteRule ^(.*)$ index.php?url=$1 [L]
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/* "modification plus 10 years"
+    FileETag none
+</IfModule>
+#php_flag zlib.output_compression On

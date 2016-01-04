@@ -1,0 +1,350 @@
+.template {
+	padding-top: 6px;
+    color: #6E7066;
+}
+.template a {
+	color: #7C93BC;
+    text-decoration: none;
+	font-weight: bold;
+}
+.template a:hover {
+	color: #81a249;
+}
+.template table{
+    width: 100%;
+    border-collapse:collapse; 
+}
+.template table caption{
+    width: 100%;
+	height: 32px;
+    line-height: 32px;  
+	background: #D9945F url('../images/header_bg.gif') repeat-x;
+	font-weight: bold;
+}
+.template table tr {
+	height: 2em;
+    /*line-height: 3em;  */
+}
+.template table td {
+	text-align: left;
+    padding: 7px 5px 7px 10px;
+}
+.colheader, .filterheader {
+	text-align: left;
+    padding: 4px 5px 2px 10px;
+}
+.colheader, .filterheader {
+    height: 26px;
+	background: url('../images/colheader_bg.gif') repeat-x;
+    border-top: white solid 2px;
+    border-bottom: #E1E1DF solid 2px;  
+    color: #CF7937;
+}  
+.template table td {
+    border-top: #E1E1DF solid 1px;
+    /* border-bottom: #E1E1DF solid 1px;  */
+}
+.template table tr.newline td {
+    border-top: 0px;
+    /* font-size: 11px; */
+}
+.filterheader input {
+    height: 1.2em;
+    font-size: 1em;
+    width: 8em;
+}
+.filterheader select {
+    height: 1.6em;
+    font-size: 1em;
+    width: 8em;
+}
+.template table td td {
+    border: none;
+    padding: 0px;
+}
+
+.template table td td.celltext {
+    white-space: nowrap;
+}
+
+.template .title {
+    border: none;
+	color: white;
+	text-align: left;
+    float: left;
+    padding-left: 10px;
+}
+.headermethod {
+	color: white;
+	text-align: right;
+    float: right;
+    padding-right: 10px;
+}
+.title a, .headermethod a {
+	color: white;
+}
+
+.title a:hover, .headermethod a:hover{
+	color: #E9C459;
+}
+.cell0, .label0{
+    background: #EDEDEC; 
+}
+.cell, .label, .cell1, .label1{
+    background: #FAFAFA; 
+}
+/*  
+.detailsTemplate .label0, .detailsTemplate .label1{
+    width: 30%;
+}          
+.detailsTemplate .cell0, .detailsTemplate .cell1{
+    width: 70%;
+} 
+*/
+.formTemplate .label0, .formTemplate .label1{
+    width: 20%;
+}          
+.formTemplate .cell0, .formTemplate .cell1{
+    width: 80%;
+}
+#fieldset-create_form .label {
+    width: 70%;
+}
+
+.label, .label0, .label1 {
+    font-weight: bold;
+}
+@media print {
+    .template table caption{
+        border: 1px solid black;
+    }
+    .headermethod, .filterheader {
+        display: none;
+    }
+    .template table td, .template table th, .cell0, .cell1{
+        border: 1px solid #000000;
+    }
+    .template a, .template a:hover { color: black; }
+}
+.button{
+	font-size: 14px;
+    background: #f2f3ef; 
+	padding: 0px 25px;
+    height: 1.7em;
+    vertical-align: middle;
+	text-align: center;
+    font-weight: bold;
+    color: #6E7066;
+	border-style: none;
+}
+.template table tr td.submitfooter{
+    background: #e2e2e0 url('../images/submitfooter_bg.gif') bottom repeat-x;
+	text-align: center;
+	padding: 0;
+	height: 32px;
+}           
+.template table tr td.separator{
+    text-align: center;
+    background: url('../images/menubg.gif') repeat-x;
+    height: 32px;
+    line-height: 32px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #e1e1df;
+    padding: 0;
+}           
+.expl{ 
+    color:gray; 
+  	font-size: 8pt;
+  	font-weight: normal;
+    white-space: normal;
+    line-height: 1em;  
+}
+
+/* Pager tool styles */
+ul.pager {
+	margin-bottom: 10px;
+	list-style: none;
+	text-align: right;
+	white-space:nowrap;
+}
+ul.pager li {
+	margin: 0;
+	padding: 0 3px;
+	list-style: none;
+	display: inline;
+    color:#333366; 
+    font-weight: bold;
+}
+ul.pager li a { 
+    text-decoration: underline; 
+    color:#333366;
+}
+ul.pager li a:hover { 
+    color:#0066cc;
+}
+.sortingHighlight { background: #E1F0F0;}
+
+form {
+    margin: 0px;
+}
+.hover-row {
+	background: #d1e3e0;
+}
+.hover-click {
+	background: #e3e0d1;
+}
+
+#item-showdetails td.label0, #item-showdetails td.label1, #user-showdetails td.label0, #user-showdetails td.label1 {
+    width: 220px;
+    color: #7C93BC;
+}
+
+/* 'Reply to this posting' and 'Email this to a friend' links */
+.template table tr td.friendAndResponse {
+    /* background: url('../images/response_bg.gif') repeat-x; */    
+    background: #c0c1bb;    
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 20px;
+}
+.friend {
+    background: #81a249;
+}
+.friendAndResponse td a {
+    color:#fff;
+    font-size: 11px;
+	padding: 0px 20px;
+	line-height: 20px;
+	text-decoration:none;
+}
+.friendAndResponse td a:hover {
+	text-decoration:underline;    
+    color:#fff;
+}
+
+.friendAndResponse table {
+    width: 100%;
+}
+.friendAndResponse table td {
+    width: 33%;
+    text-align: center;
+}
+
+/* Pictures related: */
+.template table td.adDetailsSideBar {
+    width: 206px;
+    background: #EDEDEC;
+    border-left: 1px solid white;
+    vertical-align: top;
+    text-align: center;
+    padding: 5px;
+}
+table.pictures  {
+    border-spacing: 5px;
+    border-collapse: separate;
+    /* width: 195px; */
+}
+table.pictures  tr td {
+    border: 1px solid #B6B7B2;
+    padding: 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+table.pictures  tr td img {
+    margin: 0px auto;
+}
+table.pictures  tr td.mainpic {
+    height:148px;    
+}
+
+div.picture {
+    border: 1px solid #B6B7B2;
+    padding: 3px;
+    width: 120px;
+    /* height: 90px;
+    line-height: 90px; */
+    text-align: center;
+    vertical-align: middle;
+}
+div.picture img {
+    margin: auto;
+}
+td.mainpic div.picture
+{
+    width: 187px;
+    height:140px;    
+    line-height: 140px;
+    background: #D6D7D3;
+    border: 0px;
+}
+.sideBarTop div, .sideBarBottom div
+{
+    border: 1px solid #B6B7B2;
+    width: 190px;
+    padding: 5px;
+    margin: 0px auto;
+    text-align: left;
+}
+.sideBarTop div
+{   
+    margin-bottom: 0px;
+}
+
+.sideBarBottom div
+{    
+    margin-top: 0px;
+}
+#confirmationText, #successText, #failText {
+    height: 80px;
+}
+
+table.propagateWrap td {
+    vertical-align: middle;
+    padding-right: 10px !important;
+}
+
+table.propagateWrap {
+    width: auto;
+}
+
+.confirmationTemplate {
+	background: #ab92c0;
+    color: #6E7066;
+}
+
+.confirmationHeader {
+	height: 27px;
+    line-height: 20px;  
+	font-weight: bold;
+	background: #ab92c0 url('../images/header_bg4.gif') repeat-x;
+    color: white;
+    padding-left: 10px;
+}  
+
+.confirmationContent {
+	color: #6E7066;
+	background: #FAFAFA;
+	padding: 14px 15px 12px 10px;
+	text-align: left;
+    height: 80px;
+    font-weight: bold;
+}
+
+.confirmationFooter {
+    background: url('../images/submitfooter_bg.gif') repeat-x;
+    padding: 3px 0 0;
+	height: 26px; 
+	text-align: center;
+}
+.propagate {
+    position: relative;
+    top: 3px;  
+}
+.propagate_subcat {
+    position: relative;
+    top: 6px;    
+}
+.ruleWarning {
+    color: red;
+    font-size: smaller;
+}

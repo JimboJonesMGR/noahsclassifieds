@@ -1,0 +1,102 @@
+.catGrid td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.catColor0 .catPicture, .catColor0 .catDescription div  {
+    border-left: 2px solid #E3B047;
+    border-right: 2px solid #E3B047;
+    background: #d0801d;
+}
+.catColor1 .catPicture, .catColor1 .catDescription div  {
+    border-left: 2px solid #B2C68B;
+    border-right: 2px solid #B2C68B;
+    background: #81a249;
+}
+.catColor2 .catPicture, .catColor2 .catDescription div  {
+    border-left: 2px solid #DB7F6E;
+    border-right: 2px solid #DB7F6E;
+    background: #C6352E;
+}
+.catColor3 .catPicture, .catColor3 .catDescription div  {
+    border-left: 2px solid #9187A7;
+    border-right: 2px solid #9187A7;
+    background: #503f75;
+}
+.catColor0 .catPicture  {
+    background: #EAC55A;
+}
+.catColor1 .catPicture  {
+    background: #C7D5AA;
+}
+.catColor2 .catPicture  {
+    background: #E5A18B;
+}
+.catColor3 .catPicture  {
+    background: #B0A8C0;
+}
+
+.catTitle {
+    height: 33px;
+    line-height: 33px;
+    color: #fff; 
+    font-size: 14px;
+    padding-left: 16px;
+    width: 186px;
+}
+.catTitle a {
+    color: #fff; 
+    display: block;
+    text-decoration:none;
+    font-weight:bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.catTitle a:hover {
+    color: #fff; 
+}
+.catColor0 .catTitle {
+    background: url('../images/cattab0.jpg') no-repeat;
+}
+.catColor1 .catTitle {
+    background: url('../images/cattab1.jpg') no-repeat;
+}
+.catColor2 .catTitle {
+    background: url('../images/cattab2.jpg') no-repeat;
+}
+.catColor3 .catTitle {
+    background: url('../images/cattab3.jpg') no-repeat;
+}
+
+.catGrid td div.catDescription {
+    height: 130px;
+    width: 202px;
+}
+.catDescription div {
+    color: #fff; 
+    font-size: 10px;
+    width: 170px;
+    height: 58px;
+    padding: 24px 14px 0px;
+}
+.catColor0 .catDescription {
+    background: url('../images/catbottom0.jpg') no-repeat bottom;
+}
+.catColor1 .catDescription {
+    background: url('../images/catbottom1.jpg') no-repeat bottom;
+}
+.catColor2 .catDescription {
+    background: url('../images/catbottom2.jpg') no-repeat bottom;
+}
+.catColor3 .catDescription {
+    background: url('../images/catbottom3.jpg') no-repeat bottom;
+}
+
+.catGrid td div.catPicture {
+    width: 198px;
+    text-align: center;
+}
+
+.catPicture img {
+    border: 0px;
+}
